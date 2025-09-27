@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Cyber Rush Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/CR LOGO.png" type="image/png">
+
+
+</head>
+<body>
+  <div class="home-bg">
+    <div class="home-container">
+      <img class="logo" src="assets/logo.png" alt="Logo">
+      <button class="start-btn" id="start-btn">START GAME</button>
+    </div>
+  </div>
+
+<script>
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  if(isMobile){
+      alert("Sorry! This game is only supported on PC.");
+      // Optionally, hide the start button
+      document.getElementById("start-btn").style.display = "none";
+  }
+
+  const startBtn = document.getElementById("start-btn");
+
+  startBtn.addEventListener("click", () => {
+      // Set flag to indicate music should play on game page
+      localStorage.setItem("playMusic", "true");
+
+      // Redirect to game page
+      window.location.href = "game.html";
+  });
+</script>
+</body>
+</html>

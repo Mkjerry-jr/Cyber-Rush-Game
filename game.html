@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Rush</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/CR LOGO.png" type="image/png">
+
+</head>
+<body onclick="jump()">
+
+  <audio id="bg-music" src="assets/Super Mario Bros Theme Song.mp3" loop></audio>
+
+  <div class="game-container">
+      <div class="score-card">
+          <span>HI</span>
+          <span class="high-score"></span>
+          <span class="score"></span>
+      </div>
+      <div class="player"></div>
+      <div class="obstacle"></div>
+      <div class="restart-game">
+          <div class="content">
+              <span class="text">GAME OVER !!!</span> 
+              <button onclick="restart()" class="btn-reset-game"></button>
+          </div>
+      </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+body{
+    background-color: #111;
+}
+@font-face {
+    font-family: Minecraft;
+    src: url('./assets/Minecraft.ttf');
+}
+.logo {
+    position: absolute; /* already added */
+    top: 20px;          /* distance from top */
+    left: 20px;         /* distance from left */
+    z-index: 2;         /* above background */
+}
+.home-bg {
+    position: fixed;          /* stays in place */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/Home_bg.jpg'); /* your background image */
+    background-size: cover;        /* cover entire div */
+    background-position: bottom;   /* center the image */
+    background-repeat: no-repeat;
+    z-index: -1;                   /* behind content */
+}
+
+/* Overlay for better neon effect */
+.home-bg::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);  /* optional dark overlay */
+}
+
+/* Start button - left center, bigger */
+.start-btn {
+    position: absolute;
+    top: 40%;           /* vertical center */
+    left: 20%;          /* move to left side */
+    transform: translateY(-50%); /* exact vertical center */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;       /* bigger font */
+    padding: 15px 50px;    /* bigger button */
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #111;
+    color: #00ffe7;
+    text-shadow: 0 0 5px #00ffe7, 0 0 15px #ff00de;
+    box-shadow: 0 0 20px #00ffe7, 0 0 40px #ff00de;
+    transition: all 0.3s ease;
+    z-index: 2; /* above overlay */
+}
+
+.start-btn:hover {
+    background: #00ffe7;
+    color: #111;
+    box-shadow: 0 0 20px #ff00de, 0 0 40px #00ffe7, 0 0 60px #00ffe7;
+    transform: translateY(-50%) scale(1.1);
+}
+
+
+.game-container {
+    width: 1400px;
+    height: 650px;
+    margin: 20px auto;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+    background-image: url('./assets/sky.png');
+    background-size: contain;
+    animation: bg-move 30s linear infinite;
+}
+
+@keyframes bg-move {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -50%;
+    }
+}
+
+.player {
+    width: 200px;
+    height: 295px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    background-image: url('./assets/ride.gif');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.player.jump {
+    animation: jump 1.5s infinite;
+    background-image: url('./assets/jump.gif');
+}
+
+@keyframes jump {
+    0% {
+        bottom: 12%;
+    }
+
+    25% {
+        bottom: 250px;
+    }
+    40% {
+        bottom: 250px;
+    }
+
+    100% {
+        bottom: 12%;
+    }
+}
+
+.obstacle {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 12%;
+    left: 80%;
+    /* border: 1px solid red; */
+    animation: move 3s linear infinite;
+    background-image: url('./assets/obstacle.png');
+    background-size: contain;
+}
+
+.obstacle-xs { width: 50px; height: 70px; }
+.obstacle-s { width: 60px; height: 70px; }
+.obstacle-m { width: 90px; height: 70px; }
+.obstacle-l { width: 110px; height: 90px; }
+
+@keyframes move {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100px;
+    }
+}
+
+.score-card {
+    color: #fff;
+    font-family: Minecraft;
+    font-size: 50px;
+    margin: 20px;
+}
+
+.score-card span {
+    margin-right: 20px;
+}
+
+.restart-game {
+    visibility: hidden;
+    font-family: Minecraft;
+    background-color: #ffffffd0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    z-index: 2;
+}
+
+.restart-game.show {
+    visibility: visible;
+}
+
+.restart-game .content {
+    display: flex;
+}
+
+.restart-game .btn-reset-game {
+    border: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('./assets/restart.png');
+    background-size: contain;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.restart-game .text {
+    align-self: end;
+}
+
+.stop.game-container, .stop .obstacle {
+    animation-play-state: paused;
+}
+
+.stop .player {
+    background-image: url('./assets/ride.gif');
+}
