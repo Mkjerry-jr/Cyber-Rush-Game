@@ -11,6 +11,29 @@ body{
     left: 20px;         /* distance from left */
     z-index: 2;         /* above background */
 }
+
+
+.social-icons {
+    position: absolute;
+    top: 47%;
+    left: 27.5%;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #00ffe7;   /* neon cyan */
+    font-size: 2rem;
+    transition: transform 0.3s, color 0.3s, text-shadow 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ff00de;   /* neon pink */
+    text-shadow: 0 0 10px #ff00de, 0 0 20px #00ffe7;
+}
+
+
 .home-bg {
     position: fixed;          /* stays in place */
     top: 0;
