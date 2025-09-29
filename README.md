@@ -1,5 +1,5 @@
 # Cyber-Rush-Game
-
+![Game Demo](assets/GameDemo.gif)
 ## Demo
 
 ![Game Demo](assets/CyberRush.gif)
