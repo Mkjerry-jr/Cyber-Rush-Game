@@ -1,15 +1,15 @@
 # Cyber-Rush 🛹
 
+### 💡 Inspiration
+The concept was born from an **Instagram post** where **Google collaborated with a YT Gamer(XyaaLive)**, turning her image into a **16-bit-style game character** using **Gemini Nano Banana**. In her post, she asked someone to make the generated image into a real game. That sparked the idea for **Cyber Rush**, where the same approach was used to create an game inspired by the iconic [Google Chrome Dino Game](https://chromedino.com/). Built entirely with **Vanilla JavaScript**, **HTML**, and **CSS**.
+
 ## Demo
 ![Game Demo](assets/CyberRush.gif)
 
 ## Play Online
-
 **Website Link:** [https://cyberrushgame.netlify.app/](https://cyberrushgame.netlify.app/)
 
-### 💡 Inspiration
-
-The concept was born from an **Instagram post** where **Google collaborated with a YT Gamer(XyaaLive)**, turning her into a **16-bit-style game character** using **Gemini Nano Banana**.She asked in the post that someone make the image into a real game. That sparked the idea for **Cyber Rush**, where the same approach was used to create an game inspired by the iconic [Google Chrome Dino Game](https://chromedino.com/). Built entirely with **Vanilla JavaScript**, **HTML**, and **CSS**.
+## Character Created using Gemini
 
 Following are done in the game using Gemini:
 - 🧍‍♀️ The main character is based on the gamer’s likeness, generated using **Gemini Nano Banana**, now reimagined as a skateboard-riding hero.
