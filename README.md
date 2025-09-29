@@ -1,7 +1,7 @@
 # Cyber-Rush 🛹
 
 ### 💡 Inspiration
-The concept was born from an  [Instagram post](https://www.instagram.com/p/DPGoGESERLx/?igsh=MTQ2cng4ZjVhbHQxYw==) where **Google India collaborated with a YT Gamer(XyaaLive)**, turning her image into a **16-bit-style game character** using **Gemini Nano Banana**. In her post, she asked someone to make the generated image into a real game. That sparked the idea for **Cyber Rush**, where the same approach was used to create an game inspired by the iconic [Google Chrome Dino Game](https://chromedino.com/). Built entirely with **Vanilla JavaScript**, **HTML**, and **CSS**.
+The concept was born from an  [Instagram post](https://www.instagram.com/p/DPGoGESERLx/?utm_source=ig_web_button_share_sheet) where **Google India collaborated with a YT Gamer(XyaaLive)**, turning her image into a **16-bit-style game character** using **Gemini Nano Banana**. In her post, she asked someone to make the generated image into a real game. That sparked the idea for **Cyber Rush**, where the same approach was used to create an game inspired by the iconic [Google Chrome Dino Game](https://chromedino.com/). Built entirely with **Vanilla JavaScript**, **HTML**, and **CSS**.
 
 ## Demo
 ![Game Demo](assets/CyberRush.gif)
