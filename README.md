@@ -6,7 +6,9 @@ The concept was born from an  [Instagram post](https://www.instagram.com/p/DPGoG
 ## Demo
 ![Game Demo](assets/CyberRush.gif)
 
-## Play Online Link : [https://cyberrushgame.netlify.app/](https://cyberrushgame.netlify.app/)
+ **Play Online Link : [https://cyberrushgame.netlify.app/](https://cyberrushgame.netlify.app/)**
+
+ ---
 
 ## Character Created using Gemini
 
